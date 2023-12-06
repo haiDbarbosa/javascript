@@ -8,8 +8,8 @@
 <body>
     <h1>Você é um jovem brasileiro?</h1>
     <label for="age">Sua idade:</label>
-    <input type="text" name="age" id="age">
-    <!-- <label for="country">Nacionalidade:</label>
+    <input type="number" name="age" id="age">
+    <label for="country">Nacionalidade:</label>
     <select name="country" id="country">
         <option value="Afghanistan">Afghanistan</option>
         <option value="Albania">Albania</option>
@@ -250,7 +250,7 @@
         <option value="Serbia">Serbia</option>
         <option value="Zambia">Zambia</option>
         <option value="Zimbabwe">Zimbabwe</option>
-    </select> -->
+    </select>
     <input type="button" value="Eai?" onclick="brazilian()">
 
     <div id="res">
@@ -259,17 +259,17 @@
     </div>
 
     <script>
-        console.log(document.getElementById('res'))
     function brazilian() {
-        let age = document.getElementById('age');
+        let age = document.querySelector('input#age');
         let ageNumber = Number(age.value)
-        let result = document.getElementById('res')
+        let result = document.querySelector('div#res')
+        let country = document.querySelector('select#country')
 
+        if (ageNumber >= 30 && country == ) {
+            result.innerHTML += (`<p>Você não é mais tão jovem, mas é brasileiro!</p>`)
+        } else {
         result.innerHTML = (`<p>Você tem <strong>${ageNumber}</strong> anos de idade`)
-            if(age > 30) {
-                result.innerHTML += (`<p>Você não é mais tão jovem, mas é brasileiro!</p>`)
-            }
-    }
+        }}
     </script>
 </body>
 </html>
