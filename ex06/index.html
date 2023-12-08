@@ -11,6 +11,7 @@
     <input type="number" name="age" id="age">
     <label for="country">Nacionalidade:</label>
     <select name="country" id="country">
+        <option selected value="Pais" disabled>Selecione o País</option>
         <option value="Afghanistan">Afghanistan</option>
         <option value="Albania">Albania</option>
         <option value="Algeria">Algeria</option>
@@ -130,7 +131,7 @@
         <option value="Kyrgyzstan">Kyrgyzstan</option>
         <option value="Lao">Lao People's Democratic Republic</option>
         <option value="Latvia">Latvia</option>
-        <option value="Lebanon" selected>Lebanon</option>
+        <option value="Lebanon">Lebanon</option>
         <option value="Lesotho">Lesotho</option>
         <option value="Liberia">Liberia</option>
         <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
@@ -263,13 +264,19 @@
         let age = document.querySelector('input#age');
         let ageNumber = Number(age.value)
         let result = document.querySelector('div#res')
-        let country = document.querySelector('select#country')
+        let brazilian = 'Brazil'
 
-        if (ageNumber >= 30 && country == ) {
-            result.innerHTML += (`<p>Você não é mais tão jovem, mas é brasileiro!</p>`)
-        } else {
-        result.innerHTML = (`<p>Você tem <strong>${ageNumber}</strong> anos de idade`)
-        }}
+        if (ageNumber >= 30 && document.getElementById('country').value == brazilian) {
+            result.innerHTML += (`<p><strong>${ageNumber}</strong> anos? Você não é mais tão jovem, mas é brasileiro!</p>`)
+        }
+        else if (ageNumber <= 30 && document.getElementById('country').value == brazilian) {
+            result.innerHTML = (`<p>Você tem <strong>${ageNumber}</strong> anos de idade e é brasileiro.. Um jovem brasileiro! :D`)
+        }
+        else if (ageNumber >= 30 && document.getElementById('country').value != brazilian) {
+            result.innerHTML += (`<p>Vish, <strong>${ageNumber}</strong> anos? você alem de não ser jovem, nem brasileiro é!</p>`)
+        }
+        else (result.innerHTML += (`<p><p><strong>${ageNumber}</strong> anos? Tá novão po, só faltou ser brasileiro :/</p>`))
+        }
     </script>
 </body>
 </html>
