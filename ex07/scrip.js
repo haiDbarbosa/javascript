@@ -4,7 +4,7 @@ function datahora(){
     let minutos = data.getMinutes();
     let segundos = data.getSeconds();
     let msg = document.getElementById('hora');
-    msg.innerHTML = `<b>Agora são ${hora} horas, ${minutos} minutos e ${segundos} segundos</b>`;
+    msg.innerHTML = `<b>Agora são exatamente ${hora}:${minutos}:${segundos}</b>`;
     msg.style.textAlign = 'center'
     msg.style.fontSize = '3.6rem'
 }
