@@ -8,3 +8,4 @@ function datahora(){
     msg.style.textAlign = 'center'
     msg.style.fontSize = '3.6rem'
 }
+setInterval(datahora,1000)
