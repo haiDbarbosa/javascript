@@ -7,15 +7,22 @@
     <script src="scrip.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="datahora()">
+<body>
     <header>
-        <h1></h1>
+        <h1>Vamos contar</h1>
     </header>
     <main>
-        <div id="hora">
+        <div id="um">
+            <label for="inicio">Inicio:</label>
+            <input type="number" name="inicio" id="inicio">
+            <label for="fim">Fim:</label>
+            <input type="number" name="fim" id="fim">
+            <label for="gap">Skip:</label>
+            <input type="number" name="gap" id="gap">
         </div>
         
-        <div>
+        <div id="dois">
+            <p>preparando a contagem...</p>
         </div>
     </main>
     <footer>
