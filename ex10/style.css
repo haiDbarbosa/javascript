@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(216, 198, 173);
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0px 5px 0px;
+}
+
+::selection{
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: #d0ba8d;
+    padding: 10px;
+    color: #4e4022;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 54px;
+    border-radius: 54px;
+    background: #e7cf9d;
+    box-shadow:  30px 30px 60px #d0ba8d,
+                 -30px -30px 60px #ffe9bbde;
+    height: 300px;
+    max-width: 400px;
+    margin: 5rem auto;
+    color: #4e4022;
+}
+
+main div#um {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #d0ba8d;
+    min-height: 20dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4e4022;
+}
+
+select {
+    overflow: hidden;
+    border: none;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select option:nth-child(2n){
+    background-color: #bebebe;
+}

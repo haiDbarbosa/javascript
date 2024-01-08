@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabuada</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <main>
+        <div id="um">
+            <label for="inicio">Numero</label>
+            <input type="number" name="inicio" id="ini">
+            <input type="button" value="Gerar" onclick="tabuada()">
+        </div>
+        <div id="dois">
+            <select name="tabuada" id="seltab" size="10"></select>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por <strong>Hai</strong></p>
+    </footer>
 </body>
 </html>
