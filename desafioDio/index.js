@@ -1,3 +1,3 @@
 let xp = ''
-let name = 'Haian'
+let name = 'Hai'
 
